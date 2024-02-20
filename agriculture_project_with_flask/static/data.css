@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 120px;
+  }
+  
+  .logo {
+    margin-left: 20px;
+  }
+  
+  .logo img {
+    height: 100px;
+    width: auto;
+  }
+  
+  .menu {
+    margin-right: 20px;
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-left: 10px;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu li a:hover {
+    background-color: #006400; /* Dark green */
+  }
+  
+  .section-about {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .section-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .con {
+    position: relative;
+    height: calc(100vh - 120px); /* Adjust the height based on your needs */
+  }
+  
+  .pdf-embed {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  

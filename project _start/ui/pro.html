@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>VANAM</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.jpeg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="C:\Users\Chandu\Downloads\WhatsApp Image 2023-06-08 at 8.37.25 PM.jpeg" alt="vanam_logo" width="40px" height="40px">
+        </a>
+        <button class="navbar-toggler" type="Vanam" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+    <div class ="bg-container">
+      <h1 class="text-center p-5">AUTOMATIC CROP YIELD PREDICTION</h1>
+      <p></p>
+      <div align="center">
+      <label for="district"><p class="label">Select District:</p></label>
+     
+      <select name="District" id="district">
+        <option value="Adilabad">Adilabad</option>
+        <option value="Bhadradri">Bhadradri</option>
+        <option value="Jagitial">Jagitial</option>
+        <option value="Jangoan">Jangoan</option>
+        <option value="Jayashankar">Jayashankar</option>
+        <option value="Jogulamba">Jogulamba</option>
+        <option value="Kamareddy">Kamareddy</option>
+        <option value="Karimnagar">Karimnagar</option>
+        <option value="Khammam">Khammam</option>
+        <option value="Komaram bheem asifabad">Komaram bheem asifabad</option>
+        <option value="Mahabubabad">Mahabubabad</option>
+        <option value="Mahbubnagar">Mahbubnagar</option>
+        <option value="Mancherial">Mancherial</option>
+        <option value="Medak">Medak</option>
+        <option value="Medchal">Medchal</option>
+        <option value="Mulugu">Mulugu</option>
+        <option value="Nagarkurnool">Nagarkurnool</option>
+        <option value="Nalgonda">Nalgonda</option>
+        <option value="Narayanapet">Narayanapet</option>
+        <option value="Nirmal">Nirmal</option>
+        <option value="Nizamabad">Nizamabad</option>
+        <option value="Peddapalli">Peddapalli</option>
+        <option value="Rajanna">Rajanna</option>
+        <option value="Rangareddy">Rangareddy</option>
+        <option value="Sangareddy">Sangareddy</option>
+        <option value="Siddipet">Siddipet</option>
+        <option value="Suryapet">Suryapet</option>
+        <option value="Vikarabad">Vikarabad</option>
+        <option value="Wanaparthy">Wanaparthy</option>
+        <option value="Warangal">Warangal</option>
+        <option value="Warangal urban">Warangal urban</option>
+        <option value="Yadadri">Yadadri</option>
+      </select>
+    
+      <p></p>
+      
+      <label for="season"><p class="label">Select Season:</p></label>
+      <select name="Season" id="season">
+        <option value="Season_Kharif">Kharif</option>
+        <option value="Season_rabi">rabi</option>
+      </select>
+
+      <p></p>
+
+      <label for="crop"><p class="label">Select Crop:</p></label>
+      <select name="Crop_Type" id="crop">
+        <option value="Crop_Groundnut">Groundnut</option>
+        <option value="Crop_Maize">Maize</option>
+        <option value="Crop_Moong(Green Gram)">Moong(Green Gram)</option>
+        <option value="Crop_Rice">Rice</option>
+        <option value="Crop_cotton(lint)">cotton(lint)</option>
+      </select>
+
+      <p></p>
+
+
+    <label for="rainfall"><p class="label">Enter Rainfall(mm) : </p> </label>
+    <input type="number" id="rainfall" name="rainfall" placeholder="Enter Rainfall(mm)"  value="87.9">
+    <p></p>
+    
+    <label for="min_temp"><p class="label">Enter Minimum Temperature(C) : </p></label>
+    <input type="number" id="min_temp" name="min_temp" placeholder="Enter Minimum Temperature(C)" class="input1" value="23.13">
+    <p></p>
+
+    <label for="max_temp"><p class="label">Enter Maximum Temperature(C) : </p></label>
+    <input type="number" id="max_temp" name="max_temp" placeholder="Enter Maximum Temperature(C)"  value="40.34">
+    <p></p>
+
+    <label for="irrigation"><p class="label">Enter Irrigation(MBGL) : </p></label>
+    <input type="number" id="irrigation" name="irrigation" placeholder="Enter Irrigation(MBGL)"  value="11.48">
+    <p></p>
+
+    <label for="ph"><p class="label">Enter Ph value : </p></label>
+    <input type="number" id="ph" name="ph" placeholder="Enter Ph value"  value="7.26" min="0" max="14">
+    <p></p>
+
+    <label for="N"><p class="label">Enter N(Kg/Hectar) : </p></label>
+    <input type="number" id="N" name="N" placeholder="Enter N(Kg/Hectar)"  value="219.15">
+    <p></p>
+
+    <label for="P"><p class="label">Enter P(Kg/Hectar) : </p></label>
+    <input type="number" id="P" name="P" placeholder="Enter P(Kg/Hectar)"  value="34.39">
+    <p></p>
+
+    <label for="K"><p class="label">Enter K(Kg/Hectar) : </p></label>
+    <input type="number" id="K" name="K" placeholder="Enter K(Kg/Hectar)"  value="304.57">
+    <p></p>
+
+    <label for="Zn"><p class="label">Enter Zn(ppm) : </p></label>
+    <input type="number" id="Zn" name="Zn" placeholder="Enter Zn(ppm)"  value="1.37">
+    <p></p>
+
+    <label for="Fe"><p class="label">Enter Fe(ppm) : </p></label>
+    <input type="number" id="Fe" name="Fe" placeholder="Enter Fe(ppm)"  value="13.76">
+    <p></p>
+
+    <label for="Cu"><p class="label">Enter Cu(ppm) : </p></label>
+    <input type="number" id="Cu" name="Cu" placeholder="Enter Cu(ppm)"  value="1.88">
+    <p></p>
+
+    <label for="Mn"><p class="label">Enter Mn(ppm) : </p></label>
+    <input type="number" id="Mn" name="Mn" placeholder="Enter Mn(ppm)"  value="12.79">
+    <p></p>
+    <input type="submit" value="submit" id="submit"> 
+    <h1>output: </h1>
+    </div>
+    </div>
+    
+</body>
+</html>

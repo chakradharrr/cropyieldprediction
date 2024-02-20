@@ -1,0 +1,20 @@
+.bg-container
+{
+    background-color: #b8b8b8;
+    background-size: cover;
+    padding: 16px;
+}
+
+.input1
+{
+    padding: 1%;
+    width: 20%;
+    margin-bottom: 1%;
+}
+#submit{
+    display: block;
+    padding: 0.5% 1%;
+    font-size: large;
+    margin: auto;
+    margin-top: 20px;
+}

@@ -1,0 +1,24 @@
+
+  .heading{
+    font-weight:700;
+    font-size: xx-large;
+  }
+  .paragraph
+  {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #161719;
+    text-align: left;
+    
+  }
+  .bg-container
+{
+    background-color: #b8b8b8;
+    background-size: cover;
+    width: 100%;
+    padding: 30px;
+    
+ 
+}
+}

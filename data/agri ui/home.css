@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+  }
+  
+  .logo {
+    position: relative;
+  }
+  
+  
+  .vrindha {
+    position: relative;
+    width: 300px; /* Adjust the width as desired */
+    height: 300px; /* Adjust the height as desired */
+    overflow: hidden;
+    transform: scale(0.8); /* Adjust the scale as desired */
+  }
+  
+  .vrindha:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    animation: rotating-lines 3s linear infinite;
+  }
+  
+  @keyframes rotating-lines {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  .vrindha img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Adjust the width as desired */
+  height: 100%; /* Adjust the height as desired */
+  object-fit: contain; /* Preserve aspect ratio */
+  opacity: 0; /* Initially hidden */
+  animation: fade-in 2s ease-in-out forwards; /* Animation properties */
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+  
